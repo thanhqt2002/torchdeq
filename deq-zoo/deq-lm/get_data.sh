@@ -6,8 +6,8 @@ cd data
 
 echo "- Downloading WikiText-103 (WT103)"
 if [[ ! -d 'wikitext-103' ]]; then
-    wget --continue https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip
-    unzip -q wikitext-103-v1.zip
+    wget --continue https://dax-cdn.cdn.appdomain.cloud/dax-wikitext-103/1.0.1/wikitext-103.tar.gz
+    tar -xvzf wikitext-103.tar.gz
     cd wikitext-103
     mv wiki.train.tokens train.txt
     mv wiki.valid.tokens valid.txt
